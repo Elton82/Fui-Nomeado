@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fui Nomeado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!--INÍCIO DO CABEÇALHO-->
+    <header>
+      <div class="logo">
+          <img src="imagens/marca.png" alt="marca fui nomeado" width="100px" height="57px">
+      </div>
+      <nav>
+          <ul>
+            <li><a href="#pagina1">Home</a></li>
+            <li><a href="#pagina2">Planos</a></li>
+            <li><a href="#pagina3">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--INÍCIO DA PÁGINA 1-->
+    <main id="pagina1">
+      <aside class="content">
+        <h1>Fui nomeado em algum concurso?</h1>
+        <h2>Nos envie seus dados que lhe avisaremos.</h2>
+        <form>
+          <input type="text" placeholder="Nome" id="nome" name="nome" required>
+          <input type="email" placeholder="Seu melhor e-mail" id="email" name="email" required>
+          <input type="tel" placeholder="Telefone" id="telefone" name="telefone" required>
+          <input type="text" placeholder="Órgão" id="orgao" name="orgao" required>
+          <input class="enviar" type="submit" value="Enviar">
+        </form>
+        <p>Realizaremos pesquisas diárias no Diário Oficial União para saber se você foi nomeado. Assim que seu nome for publicado, lhe enviaremos um e-mail lhe comunicando.</p>
+        <p>Confira os nossos Planos para outros meios de contato.</p>
+      </aside>
+      <article class="imagem">
+        <img src="imagens/bg-imagem.png" alt="imagem de uma pessoa feliz" width="400px">
+      </article>
+    </main>
+    <!--INÍCIO DA PÁGINA 2-->
+    <section id="pagina2">
+      <div class="titulo">
+        <h1>Planos</h1>
+      </div>
+      <div class="content">
+        <div class="gratis">
+          <h3>Gratuíto</h3>
+          <img src="imagens/icones/icones_gratis.png" alt="icone de email em azul" width="150px" height="160px"><br>
+          <a href="#">Avise-me</a>
+        </div>
+        <div class="plus">
+          <h3>Plus</h3>
+          <img src="imagens/icones/icones_plus.png" alt="icone de email em azul" width="150px" height="160px"><br>
+          <a href="#">1,00/mês</a>
+        </div>
+        <div class="prime">
+          <h3>Premium</h3>
+          <img src="imagens/icones/icones_premium.png" alt="icone de email em azul" width="150px" height="160px"><br>
+          <a href="#">5,00/mês</a>
+        </div>
+      </div>
+    </section>
+    <!--INÍCIO DA PÁGINA 3-->
+    <section id="pagina3">
+      <div class="somos">
+        <h1>Quem somos?</h1>
+        <p>A AYA Tech é uma empresa especializada em Open Data e litura de informações públicas.</p>
+        <p>Capturamos dados de diversas fontes públicas e disponizamos em forma de serviços para pessoas físicas e jurídicas no mercado B2C e B2B.</p>
+        <p>Acesse o nosso site para saber mais.</p>
+        <a href="http://ayatech.com.br">www.ayatech.com.br</a>
+      </div>
+      <div class="oferta">
+        <h1>O que oferecemos?</h1>
+        <p>Sabemos que passar em um concurso público é o maior sonho de muitas pessoas.</p>
+        <p>Imagine ser nomeado e não saber da nomeação e acabar perdendo o prazo para a posso?</p>
+        <p>Este site surgiu para livrar você, FUTURO SERVIDOR PÚBLICO, de ter que entrar todos os dias no Diário Oficial.</p>
+      </div>
+      <div class="contato">
+        <h1>Fale conosco!</h1>
+        <form action="enviar-mensagem.php" method="post">
+          <input type="text" placeholder="Nome" id="nome" name="nome" required>
+          <input type="email" placeholder="Seu mlhor e-mail" id="email" name="email" required>
+          <textarea placeholder="Escreva aqui a sua mensagem." id="mensagem" name="mensagem" required></textarea>
+          <input class="bt-enviar" type="submit" value="Enviar">
+        </form>
+      </div>
+      
+    </section>
+    <!--INICIO DO RODAPÉ--> 
+    <footer>
+        <nav class="bottom">
+            <ul>
+              <li><a href="#pagina1">Home</a></li>
+              <li><a href="#pagina2">Planos</a></li>
+              <li><a href="#pagina3">Contato</a></li>
+            </ul>
+        </nav>
+      <div class="copy">
+        <p>&copy;todos os direitos reservados | AYA TECH - 2023</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
